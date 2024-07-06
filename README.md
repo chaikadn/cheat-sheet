@@ -100,3 +100,25 @@ https://github.com/git/git/blob/master/README.md
 - Команда `git status` всегда подскажет, что происходит с файлом: например, он добавлен в список «на коммит» или ещё вообще не отслеживается, или изменён.
 - `git status` показывает явно следующие состояния файлов: `untracked`, `staged` и `modified`.
 - `git status` подсказывает, какие команды можно выполнить, чтобы поменять состояние файла.
+
+# Mermaid. блок схемы
+```mermaid
+  graph TD;
+      A-->B;
+      A-->C;
+      B-->D;
+      C-->D;
+```
+```mermaid
+sequenceDiagram
+    participant dotcom
+    participant iframe
+    participant viewscreen
+    dotcom->>iframe: loads html w/ iframe url
+    iframe->>viewscreen: request template
+    viewscreen->>iframe: html & javascript
+    iframe->>dotcom: iframe ready
+    dotcom->>iframe: set mermaid data on iframe
+    iframe->>iframe: render mermaid
+```
+
